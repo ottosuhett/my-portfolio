@@ -1,0 +1,20 @@
+@import "../../medias/medias.module.scss";
+
+.itemsContainer{
+    .navItem{
+        font-size: 1.5rem;
+        color: #ffffff;
+        font-family: 'Press Start 2P', cursive;
+        opacity: 0.8;
+        &:hover{
+            border: 1px dashed #ffffff; 
+            padding: 1rem;
+            border-radius: 10%;
+            opacity: 1;
+        }
+    }
+}
+.navBrand {
+    width: 5rem;
+}
+

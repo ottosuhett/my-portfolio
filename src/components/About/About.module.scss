@@ -1,0 +1,22 @@
+@import "../../medias/medias.module.scss";
+@import "../../mixin/mixin.module.scss";
+.aboutContainer{
+    @include display-config(row, 5rem);
+    .imgAboutContainer{
+        max-width: 25rem;
+    }
+    .img{
+        width: 100%;
+    }
+    .text{
+        @include display-config(row, 1rem, nowrap);
+        @include text-config(2.5rem, 0.2rem);
+        max-width: 80rem;
+    }
+}
+.msgAboutContainer{
+    @include display-config(row, 1rem);
+    .msg{
+        @include text-config(3rem, 0.2rem);
+    }
+}

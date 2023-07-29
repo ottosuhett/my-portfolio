@@ -1,0 +1,18 @@
+@import "../../medias/medias.module.scss";
+@import "../../mixin/mixin.module.scss";
+
+.bi{
+    font-size: 3rem;
+    color: #ffffff;
+    transition:  0.3s ease-in-out;
+    &:hover{
+        border: 2px dashed #ffffff; 
+        border-radius: 20%;
+        padding: 1rem;
+    }
+}
+.itemsContainer{
+    @include display-config(row, 0);
+    gap: 3rem;
+    margin-bottom: 2rem;
+}

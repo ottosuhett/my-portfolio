@@ -1,0 +1,56 @@
+@import "../../mixin/mixin.module.scss";
+@import "../../mixin/mixin.module.scss";
+
+.cardContainer{
+    max-width: 35rem;
+    min-height: 40rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+    &:hover{
+        border: 2px dashed #ffffff;
+        padding: 1.2rem;
+        cursor: pointer;
+        opacity: 1;
+    }
+    .cardImg{
+        width: 100%;
+        margin: 0 auto;
+        height: 20rem;
+    }
+    .cardBody{
+        .cardTitle{
+            font-size: 3rem;
+        }
+        .cardText{
+            font-size: 1.5rem;
+            min-height: 15rem;
+            @include display-config(row, 1rem, nowrap)
+        }
+        .techContainer{
+            .techTitle{
+                font-size: 2rem;
+            }
+            .cardTechnologies{
+                min-height: 2rem;
+                @include text-config(2rem,0.2rem,#000000);
+            }
+        }
+        .buttonsContainer{
+            gap: 1rem;
+            margin-top: 1rem;
+            @include display-config(row,0);
+            &>a{
+                border-radius: 2rem;
+                padding: 0.5rem 1.5rem;
+                max-width: 15rem;
+                @include text-config(1.5rem, 0.2rem);
+                &:hover{
+                    opacity: 0.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "../../medias/medias.module.scss";
+@import "../../mixin/mixin.module.scss";
+
+.indexContainer{ 
+    @include display-config(column, 0, nowrap);
+    overflow-x: hidden;
+    text-align: center;
+}
+.header{
+    align-self: flex-start;
+    flex-grow: 1;
+}
+.mainContainer{
+    font-size: 2rem;
+    flex-grow: 2;
+    margin: 2rem 0;
+}
+.cardsContainer{
+    @include display-config(row, 0);
+    margin: 2rem 0;
+    gap: 1rem;
+}
+.footer{
+    flex-grow: 1;
+}

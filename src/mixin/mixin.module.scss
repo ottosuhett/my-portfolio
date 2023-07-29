@@ -1,0 +1,15 @@
+@mixin display-config($direction, $padding,$wrap:wrap){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    padding: $padding;
+    flex-wrap: $wrap;
+}
+
+@mixin text-config($fontSize, $letterSpace, $color:#ffffff){
+    font-size: $fontSize;
+    text-align: center;
+    letter-spacing: $letterSpace;
+    color: $color;
+}

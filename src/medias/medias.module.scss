@@ -1,0 +1,36 @@
+@media(max-width:575px){
+    .itemsContainer{
+        text-align: center;
+    }
+    .togglerIcon{
+        font-size: 3rem;
+        color: #ffffff;
+        filter: invert(1);
+    }
+    .indexContainer{
+        .header{
+            align-self: center;
+         }
+    }
+}
+@media(max-width:380px){
+    .skillsContainer{
+        .imgContainer{
+            flex-direction: column;
+        }
+    }
+    .msgAboutContainer{
+        .msg{
+            font-size: 1rem;
+        }
+    }
+    .heroContainer{
+        text-align: center;
+        .hero{
+            max-width: 80%;
+        }
+    }
+    
+}
+
+
